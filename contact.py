@@ -16,8 +16,8 @@ def Lister():
 
 #3. Save contacts
 def Save():
-	for i,(name,phone_number) in enumerate(contacts, 1):
-		with open(FILENAME, "a") as fic:
+	with open(FILENAME, "a") as fic:
+		for i,(name,phone_number) in enumerate(contacts, 1):
 			fic.write(f"\n - CONTACT {i}")
 			fic.write(f"\n   NAME       : {name}")
 			fic.write(f"\n   NUMBER : {phone_number}\n ")

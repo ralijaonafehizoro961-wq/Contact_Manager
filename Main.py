@@ -38,6 +38,7 @@ def menu():
 				Lister()
 			elif choice == 3:
 				Save()
+				print("Your contacts are saved in the file < Donnee.txt>")
 			elif choice == 4:
 				print("Goodbye ! ")
 				break

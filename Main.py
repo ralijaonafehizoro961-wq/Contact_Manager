@@ -40,7 +40,7 @@ def menu():
 			print("2 . List the contacts")
 			print("3 . Save contacts")
 			print("4 . Exit")
-			choice = int(input("Entrer votre choix : "))
+			choice = int(input("Enter your choice : "))
 			if choice == 1:
 				Add()
 			elif choice == 2:

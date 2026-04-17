@@ -26,8 +26,8 @@ def Save():
 
 # menu 
 def menu():
-	try :
-		while True:
+	while True:
+		try :
 			print("\n" + "="*10 +  " CONTACT MANAGER " + "="*10)
 			print("1 . Add a new contact")
 			print("2 . List the contacts")
@@ -45,8 +45,8 @@ def menu():
 				break
 			else :
 				print("Please, enter a valid choice !")
-	except ValueError :
-		print("Error, please enter valid numbers")
+		except ValueError :
+			print("Error, please enter valid numbers")
 
 
 if __name__ == "__main__":

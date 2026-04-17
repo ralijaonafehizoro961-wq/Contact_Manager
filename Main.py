@@ -26,24 +26,27 @@ def Save():
 
 # menu 
 def menu():
-	while True:
-		print("\n" + "="*10 +  " CONTACT MANAGER " + "="*10)
-		print("1 . Add a new contact")
-		print("2 . List the contacts")
-		print("3 . Save contacts")
-		print("4 . Exit")
-		choice = int(input("Entrer votre choix : "))
-		if choice == "1":
-			Add()
-		elif choice == "2":
-			Lister()
-		elif choice == "3":
-			Save()
-		elif choice == "4":
-			print("Goodbye ! ")
-			break
-		else :
-			print("Please, enter a valid choice !")
+	try :
+		while True:
+			print("\n" + "="*10 +  " CONTACT MANAGER " + "="*10)
+			print("1 . Add a new contact")
+			print("2 . List the contacts")
+			print("3 . Save contacts")
+			print("4 . Exit")
+			choice = int(input("Entrer votre choix : "))
+			if choice == "1":
+				Add()
+			elif choice == "2":
+				Lister()
+			elif choice == "3":
+				Save()
+			elif choice == "4":
+				print("Goodbye ! ")
+				break
+			else :
+				print("Please, enter a valid choice !")
+	except ValueError :
+		print("Error, please enter valid numbers")
 
 
 if __name__ == "__main__":

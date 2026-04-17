@@ -32,15 +32,19 @@ def menu():
 		print("2 . List the contacts")
 		print("3 . Save contacts")
 		print("4 . Exit")
-		choice = input("Entrer votre choix : ")
+		choice = int(input("Entrer votre choix : "))
 		if choice == "1":
 			Add()
 		elif choice == "2":
 			Lister()
 		elif choice == "3":
 			Save()
-		else :
+		elif choice == "4":
+			print("Goodbye ! ")
 			break
+		else :
+			print("Please, enter a valid choice !")
+
 
 if __name__ == "__main__":
 	menu()

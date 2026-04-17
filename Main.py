@@ -24,9 +24,18 @@ def Save():
 
 # menu 
 def menu():
+	BLEU = "\033[94m"
+	RESET = "\033[0m"
+
+	ascii_art = r"""
+█▀▀ █▀█ █▄█ ▀█▀ ▄▀█ █▀▀ ▀█▀   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▀ █▀█
+█▄▄ █▄█ ░█░ ░█░ █▀█ █▄▄ ░█░   █░▀░█ █▀█ █░▀█ █▀█ █▄█ ██▄ █▀▄
+"""
+
+	print(BLEU + ascii_art + RESET)
 	while True:
 		try :
-			print("\n" + "="*10 +  " CONTACT MANAGER " + "="*10)
+			print("*"*60)
 			print("1 . Add a new contact")
 			print("2 . List the contacts")
 			print("3 . Save contacts")

@@ -22,8 +22,6 @@ def Save():
 			fic.write(f"\n   NAME       : {name}")
 			fic.write(f"\n   NUMBER : {phone_number}\n ")
 
-
-
 # menu 
 def menu():
 	while True:
@@ -34,13 +32,13 @@ def menu():
 			print("3 . Save contacts")
 			print("4 . Exit")
 			choice = int(input("Entrer votre choix : "))
-			if choice == "1":
+			if choice == 1:
 				Add()
-			elif choice == "2":
+			elif choice == 2:
 				Lister()
-			elif choice == "3":
+			elif choice == 3:
 				Save()
-			elif choice == "4":
+			elif choice == 4:
 				print("Goodbye ! ")
 				break
 			else :

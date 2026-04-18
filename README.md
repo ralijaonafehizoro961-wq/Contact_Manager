@@ -13,7 +13,7 @@ This command-line application allows users to manage contacts by adding, listing
 
 ## Preview
 
-![Contact Manager Screenshot](screenshot/image.jpg)
+![Contact Manager Screenshot](screenchot/image.jpg)
 
 ---
 

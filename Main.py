@@ -10,8 +10,11 @@ def Add():
 
 #2. List the contacts
 def Lister():
-	for i,(name,phone_number) in enumerate(contacts, 1):
-		print(f"{i}. {name} - {phone_number}")
+	if not contacts:
+		print("the contact list is empty")
+	else :
+		for i,(name,phone_number) in enumerate(contacts, 1):
+			print(f"{i}. {name} - {phone_number}")
 
 
 #3. Save contacts

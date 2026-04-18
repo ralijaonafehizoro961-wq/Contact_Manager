@@ -1,16 +1,28 @@
-# Contact Manager (Python CLI)
+# Contact Manager
+
+![GitHub repo size](https://img.shields.io/github/repo-size/ralijaonafehizoro961-wq/Contact_Manager)
+![GitHub stars](https://img.shields.io/github/stars/ralijaonafehizoro961-wq/Contact_Manager?style=social)
+![GitHub forks](https://img.shields.io/github/forks/ralijaonafehizoro961-wq/Contact_Manager?style=social)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+
 
 A simple and beginner-friendly Contact Manager built with Python.
 This command-line application allows users to manage contacts by adding, listing, and saving them into a local file.
 
 ---
 
+## Preview
+
+![Contact Manager Screenshot](screenshot/image.png)
+
+---
+
 ## Features
 
-* Add new contacts (name and phone number)
-* Display all contacts
-* Save contacts to a local file (`Donnee.txt`)
-* Exit the application
+*  Add new contacts (name and phone number)
+*  Display all contacts
+*  Save contacts to a local file (`Donnee.txt`)
+*  Exit the application
 
 ---
 
@@ -24,11 +36,12 @@ This command-line application allows users to manage contacts by adding, listing
 
 ## 📂 Project Structure
 
-```id="2hbc0h"
+```id="f08cjr"
 .
-├── main.py        # Main application
-├── .gitignore     # Ignored files configuration
-└── README.md      # Documentation
+├── main.py
+├── .gitignore
+├── screenshot.png
+└── README.md
 ```
 
 ---
@@ -45,45 +58,27 @@ The file `Donnee.txt` is **not included in this repository** because it is liste
 
 ### 1. Clone the repository
 
-```id="b6d9ai"
+```id="m87fui"
 git clone https://github.com/ralijaonafehizoro961-wq/Contact_Manager.git
 cd Contact_Manager
 ```
 
 ### 2. Run the program
 
-```id="vqbe22"
-python3 Main.py
+```id="u6vr3z"
+python3 main.py
 ```
 
 ---
 
 ## Usage
 
-When you run the program, you will see:
-
-```id="9bclh2"
+```id="aivtx0"
 ========== CONTACT MANAGER ==========
 1. Add a new contact
 2. List the contacts
 3. Save contacts
 4. Exit
-```
-
-### Options
-
-* **1** → Add a new contact
-* **2** → View contacts
-* **3** → Save contacts (creates `Donnee.txt`)
-* **4** → Exit
-
----
-
-## Example
-
-```id="c11r38"
-1. John Doe - 0340000000
-2. Jane Smith - 0321111111
 ```
 
 ---
@@ -99,20 +94,7 @@ When you run the program, you will see:
 
 ---
 
-## Learning Objectives
-
-This project helps understand:
-
-* Python basics
-* Lists and data structures
-* File handling
-* CLI program design
-
----
-
-## Author
+## 👨‍💻 Author
 
 * Fehizoro RALIJAONA
 * GitHub: https://github.com/ralijaonafehizoro961-wq
-
----

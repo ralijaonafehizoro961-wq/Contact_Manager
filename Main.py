@@ -20,10 +20,14 @@ def Lister():
 #3. Save contacts
 def Save():
 	with open(FILENAME, "a") as fic:
-		for i,(name,phone_number) in enumerate(contacts, 1):
-			fic.write(f"\n - CONTACT {i}")
-			fic.write(f"\n   NAME       : {name}")
-			fic.write(f"\n   NUMBER : {phone_number}\n ")
+		if not contacts:
+			print("No contacts to save ! ")
+		else :
+			for i,(name,phone_number) in enumerate(contacts, 1):
+				fic.write(f"\n - CONTACT {i}")
+				fic.write(f"\n   NAME       : {name}")
+				fic.write(f"\n   NUMBER : {phone_number}\n ")
+			print("Your contacts are saved in the file < Donnee.txt>")
 
 # menu 
 def menu():
@@ -50,7 +54,6 @@ def menu():
 				Lister()
 			elif choice == 3:
 				Save()
-				print("Your contacts are saved in the file < Donnee.txt>")
 			elif choice == 4:
 				print("Goodbye ! ")
 				break

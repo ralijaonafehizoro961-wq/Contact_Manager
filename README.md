@@ -38,9 +38,10 @@ This command-line application allows users to manage contacts by adding, listing
 
 ```id="f08cjr"
 .
-├── main.py
+├── Main.py
 ├── .gitignore
-├── screenshot.png
+├── screenchot/
+|	|── image.jpg
 └── README.md
 ```
 
@@ -66,7 +67,7 @@ cd Contact_Manager
 ### 2. Run the program
 
 ```id="u6vr3z"
-python3 main.py
+python3 Main.py
 ```
 
 ---
@@ -83,7 +84,7 @@ python3 main.py
 
 ---
 
-## 🔧 Future Improvements
+## Future Improvements
 
 *  Search contacts
 *  Edit contacts
@@ -94,7 +95,7 @@ python3 main.py
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 * Fehizoro RALIJAONA
 * GitHub: https://github.com/ralijaonafehizoro961-wq

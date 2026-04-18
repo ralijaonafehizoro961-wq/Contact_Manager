@@ -10,24 +10,34 @@ def Add():
 
 #2. List the contacts
 def Lister():
-	if not contacts:
-		print("the contact list is empty")
-	else :
-		for i,(name,phone_number) in enumerate(contacts, 1):
-			print(f"{i}. {name} - {phone_number}")
+    if not contacts:
+        try:
+            with open(FILENAME, "r") as fic:
+                contain = fic.read()
+                if contain.strip():
+                    print(contain)
+                else:
+                    print("The contact list is empty")
+        except FileNotFoundError:
+            print("No contact file found")
+    else:
+        for i, (name, phone_number) in enumerate(contacts, 1):
+            print(f"{i}. {name} - {phone_number}")
 
 
 #3. Save contacts
 def Save():
-	with open(FILENAME, "a") as fic:
-		if not contacts:
-			print("No contacts to save ! ")
-		else :
-			for i,(name,phone_number) in enumerate(contacts, 1):
-				fic.write(f"\n - CONTACT {i}")
-				fic.write(f"\n   NAME       : {name}")
-				fic.write(f"\n   NUMBER : {phone_number}\n ")
-			print("Your contacts are saved in the file < Donnee.txt>")
+    if not contacts:
+        print("No contacts to save!")
+    else:
+        with open(FILENAME, "a") as fic:
+            for i, (name, phone_number) in enumerate(contacts, 1):
+                fic.write(f"\n - CONTACT {i}")
+                fic.write(f"\n   NAME   : {name}")
+                fic.write(f"\n   NUMBER : {phone_number}\n")
+
+        print("Your contacts are saved in the file <Donnee.txt>")
+        contacts.clear()
 
 # menu 
 def menu():
